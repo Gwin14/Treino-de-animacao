@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+
+@keyframes mostrar {
+    0%{width: 30px; height: 30px;}
+    50%{width: 20%; height: 30px;}
+    100%{width: 20%; height: 600px;}
+}
+
+@keyframes texto {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+:root{
+    --corFundo: #2b2b2e;
+    --corPrimaria: #5b5bfa;
+    --corSecundaria: #f0f8ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background-color: var(--corFundo);
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+    border: 2px solid var(--corPrimaria);
+    width: 80vw;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 100px;
+    color: var(--corSecundaria);
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid var(--corSecundaria);
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.ACrescer{
+    background-color: var(--corPrimaria);
+    border-radius: 10px;
+    width: 20%;
+    height: 600px;
+    padding: 10px;
+    margin: 40px 0px;
+    padding: 20px;
+
+    animation-name: mostrar;
+    animation-duration: 3s;
+}
+
+.TCrescer{
+    color: var(--corSecundaria);
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1.5em;
+    
+    animation-name: texto;
+    animation-duration: 6s;
+}
+
+.ATrocarCor{
+    background-color: var(--corPrimaria);
+    border-radius: 10px;
+    width: 5%;
+    height: 10px;
+    padding: 10px;
+    margin: 40px 0px;
+    padding: 20px;
+}
+
+.ATrocarCor{
+    color: transparent;
+}
